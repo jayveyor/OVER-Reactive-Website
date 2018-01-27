@@ -1,0 +1,4 @@
+@mixin headingfont ($fontSize, $fontColor) {
+    font-size: $fontSize;
+    color: $fontColor;
+}
