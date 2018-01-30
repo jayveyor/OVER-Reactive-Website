@@ -1,0 +1,33 @@
+.sectiontitle .flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectiontitle h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.titleline {
+    background-color: #a8edea;
+    width: 30px;
+    height: 2px;
+    float: left;
+}
+
+section .undertitle :nth-child(even) {
+    transition: 2s;
+    background-color: #f5efef;
+}
+
+section:hover .undertitle :nth-child(even) {
+    margin: 0px 200px;
+    background-color: #a8edea;
+}
+
+.sectiontitle {
+    margin-bottom: 5%;
+    text-transform: capitalize;
+}

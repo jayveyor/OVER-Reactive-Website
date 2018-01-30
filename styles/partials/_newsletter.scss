@@ -1,0 +1,53 @@
+.newsletter {
+    margin: 5% 0px;
+    text-align: center;
+    height: 70vh;
+}
+
+.newsletter .sectiontitle {
+    margin: 0;
+}
+
+.newsletter .flex {
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.icons img {
+    transition: .2s;
+}
+
+.icons img:hover {
+    opacity: .5;
+}
+
+.icons .flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletter p {
+    color: $primaryColor;
+    width: 60%;
+    font-size: .8rem;
+}
+
+.newsletter input {
+    width: 70%;
+    border: none;
+    color: $primaryColor;
+    font-size: .8rem;
+    border-bottom: 1px#e6e5e1 solid;
+}
+
+.newsletter form {
+    position: relative;
+}
+
+.newsletter span {
+    position: absolute;
+    right: 150px;
+    bottom: 0;
+}

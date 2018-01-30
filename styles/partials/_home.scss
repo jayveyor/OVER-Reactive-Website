@@ -1,0 +1,47 @@
+.home {
+    margin-top: 10%;
+}
+
+.home .flex {
+    flex-direction: column;
+    min-height: 250px;
+    justify-content: space-between;
+}
+
+.interior {
+    background-image: url('/images/plant.png');
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+    height: 120px;
+}
+
+.interior h3 {
+    color: #a8edea;
+    font-weight: normal;
+}
+
+.interior h2 {
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+.home .flex h4 {
+    font-weight: normal;
+    font-style: italic;
+    color: $primaryColor;
+    margin-top: 5%;
+}
+
+.home .flex span {
+    font-weight: bold;
+    font-style: normal;
+    color: black;
+}
+
+.home .flex p {
+    text-align: center;
+    color: $primaryColor;
+    max-width: 700px;
+}

@@ -1,0 +1,127 @@
+.plants {
+    width: 100%;
+    height: 400px;
+    margin-top: 10%;
+}
+
+.airplant {
+    width: calc(40% - 15px);
+    background-image: url("/images/cacti.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: .2s;
+    z-index: 2;
+}
+
+.airplant:hover {
+    margin-left: 15px;
+    -webkit-box-shadow: -20px 0px 0px 0px #a8edea;
+    -moz-box-shadow: -20px 0px 0px 0px #a8edea;
+    box-shadow: -20px 0px 0px 0px #a8edea;
+}
+
+.rightplants {
+    width: 60%;
+}
+
+.officeplant {
+    width: calc(50% - 15px);
+    background-image: url("/images/hanging.png");
+    background-repeat: no-repeat;
+    transition: .5s;
+}
+
+.officeplant:hover {
+    margin-top: -40px;
+}
+
+.houseplant {
+    width: 50%;
+    background-image: url("/images/airplant.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    transition: .5s
+}
+
+.houseplant:hover {
+    transform: rotate(0.5turn);
+}
+
+.plantbox {
+    text-align: center;
+    background-color: white;
+    padding: 10px 25px;
+}
+
+.plantbox h2 {
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+.plantbox h3 {
+    color: $primaryColor;
+    font-weight: normal;
+    font-size: .75rem;
+}
+
+.plantwrap .flex .plantbox {
+    transition: .2s;
+}
+
+.plantwrap .flex:hover .plantbox {
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.plantstop {
+    height: calc(50% - 15px);
+    z-index: 2;
+}
+
+.plants .flex {
+    height: 100%;
+    justify-content: space-between;
+}
+
+.plantwrap .flex {
+    justify-content: space-between;
+    height: 100%;
+}
+
+.rightplants .flex {
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+
+.plantstop .flex {
+    justify-content: space-between;
+    height: 100%;
+    flex-direction: row;
+}
+
+.contplants {
+    height: 50%;
+    background-image: url("/images/pot.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+    transition: .5s
+}
+
+.contplants:hover {
+    -webkit-box-shadow: -50px -50px 0px 50px $primaryColor;
+    ;
+    -moz-box-shadow: -50px -50px 0px 50px $primaryColor;
+    ;
+    box-shadow: -50px -50px 0px 50px $primaryColor;
+    ;
+}
+
+.plantwrap .flex {
+    align-items: center;
+    justify-content: center;
+}

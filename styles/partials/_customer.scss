@@ -1,0 +1,127 @@
+.customer {
+    max-width: 100vw;
+    height: 500px;
+    margin-top: 5%;
+}
+
+.customer .flex {
+    flex-direction: row;
+    height: 100%;
+}
+
+.leftcustomer {
+    background-color: #dddfed;
+    width: 50%;
+    padding: 5%;
+    padding-top: 7%;
+    height: 100%;
+    text-align: center;
+}
+
+.leftcustomer .flex {
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-between;
+}
+
+.leftcustomer ul {
+    display: flex;
+    color: $primaryColor;
+    font-size: 2rem;
+    width: 180px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftcustomer li {
+    transition: .2s;
+}
+
+.leftcustomer li:hover {
+    transform: scale(1.75);
+}
+
+.leftcustomer h2 {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+.leftcustomer h1 {
+    font-size: 10rem;
+    color: #f07f84;
+    height: 30%;
+    line-height: 1;
+}
+
+.leftcustomer p {
+    font-size: .8rem;
+    font-style: italic;
+}
+
+.leftcustomer h4 {
+    font-weight: normal;
+    color: $primaryColor;
+    font-size: .8rem;
+    margin: 15px 0;
+}
+
+.customerwords {
+    height: 100%;
+}
+
+.customerwords .flex {
+    height: 85%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rightcustomer {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/video.png');
+    width: 50%;
+    height: 100%;
+    padding: 10% 5%;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.rightcustomer .flex {
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightcustomer h3 {
+    font-weight: normal;
+    font-size: .75rem;
+    letter-spacing: .3rem;
+    margin-top: 10px;
+}
+
+.play {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f07f84;
+    text-align: center;
+    line-height: 65px;
+    border: 7px solid #f07f8554;
+    color: white;
+    font-size: 1.5rem;
+    background-clip: padding-box;
+    margin-bottom: 40px;
+    transition: .3s;
+}
+
+.play:hover {
+    background-color: #b45f63;
+    color: black;
+    border: 7px solid #f07f84;
+    background-clip: padding-box;
+}
+
+.play i {
+    transform: scaleX(1.7);
+    margin-left: 5px;
+}
