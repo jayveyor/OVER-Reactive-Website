@@ -133,7 +133,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 header {
-  height: 100vh;
+  height: 700px;
   overflow: hidden; }
 
 .headwrap {
@@ -585,7 +585,6 @@ header {
 
 .gallery {
   margin-top: 5%;
-  height: 700px;
   text-align: center; }
 
 .gallery .flex {
@@ -605,10 +604,11 @@ header {
 
 .galleryitem {
   width: calc((100% / 5) - 15px);
-  height: calc((100% / 2) - 15px); }
+  height: calc((100% / 2) - 15px);
+  margin-bottom: 5%; }
 
 .galleryitem img {
-  max-width: 100%;
+  width: 100%;
   max-height: 100%; }
 
 .imgcont {
@@ -748,8 +748,7 @@ header {
 .leftcustomer {
   background-color: #dddfed;
   width: 50%;
-  padding: 5%;
-  padding-top: 7%;
+  padding: 7% 5% 10%;
   height: 100%;
   text-align: center; }
 
@@ -758,10 +757,13 @@ header {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 70%;
+  height: 100%;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .leftcustomer ul {
   display: -webkit-box;
@@ -791,12 +793,6 @@ header {
   text-transform: capitalize;
   font-weight: 500;
   font-size: 1.7rem; }
-
-.leftcustomer h1 {
-  font-size: 10rem;
-  color: #f07f84;
-  height: 30%;
-  line-height: 1; }
 
 .leftcustomer p {
   font-size: .8rem;
@@ -876,6 +872,15 @@ header {
   -ms-transform: scaleX(1.7);
   transform: scaleX(1.7);
   margin-left: 5px; }
+
+.plantstore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%; }
 
 .blog {
   margin-top: 10%; }
@@ -965,7 +970,7 @@ header {
 .newsletter {
   margin: 5% 0px;
   text-align: center;
-  height: 70vh; }
+  height: 500px; }
 
 .newsletter .sectiontitle {
   margin: 0; }
@@ -1019,6 +1024,12 @@ header {
   right: 150px;
   bottom: 0; }
 
+.icons a {
+  margin-right: 10px; }
+
+.icons a:last-child {
+  margin-right: 0px; }
+
 footer {
   border-top: 1px solid #e6e5e1;
   line-height: 1.5rem;
@@ -1047,6 +1058,13 @@ footer .undertitle {
   width: 70%; }
 
 .footwrap .flex {
+  height: 350px; }
+
+.footbreak,
+.underbreak {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -1054,14 +1072,13 @@ footer .undertitle {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  height: 350px; }
+  width: 100%; }
 
 .over {
-  width: 35%;
-  padding: 0px 15px 0px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 65%;
+  padding: 0px 15px 0px 0px; }
+
+.over .flex {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1110,7 +1127,7 @@ footer ul {
   color: #888890; }
 
 .services {
-  width: 20%; }
+  width: 50%; }
 
 .services .flex {
   -webkit-box-orient: vertical;
@@ -1131,10 +1148,10 @@ footer ul {
   transition: 1s; }
 
 .services:hover .undertitle {
-  margin-left: 100px; }
+  margin-left: 80px; }
 
 .account {
-  width: 20%; }
+  width: 50%; }
 
 .account .flex {
   -webkit-box-orient: vertical;
@@ -1155,14 +1172,14 @@ footer ul {
   transition: 1s; }
 
 .account:hover .undertitle {
-  margin-left: 100px; }
+  margin-left: 80px; }
 
 .instagram {
   padding: 0px 0px 0px 10px;
-  width: 25%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 40%;
+  height: 80%; }
+
+.instagram .flex {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1173,13 +1190,14 @@ footer ul {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  height: 80%; }
+  height: 95%; }
 
 .postbox h3 {
   margin: 0; }
 
 .instabox {
-  height: calc((70px * 2) + 17px); }
+  height: calc((70px * 2) + 17px);
+  min-width: calc((70px *3) + 10px); }
 
 .instabox .flex {
   display: -webkit-box;
@@ -1193,7 +1211,11 @@ footer ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 100%; }
+  height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
 
 .instabox img {
   max-width: 100%;
@@ -1383,3 +1405,190 @@ h1 {
 
 ul {
   list-style: none; }
+
+@media (max-width: 1060px) {
+  .galleryoverlay .flex {
+    height: 70%; }
+  .postbox:hover .blogtext {
+    height: 250px; }
+  .newsletter span {
+    right: 110px; } }
+
+@media (max-width: 1000px) {
+  .rightcustomer {
+    padding-bottom: 5%; }
+  .plantstore {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; } }
+
+@media (max-width: 920px) {
+  .galleryoverlay .flex {
+    height: 80%; }
+  .mainwrap, .footwrap {
+    width: 80%; }
+  .payment {
+    width: 115%; }
+  .officeplant {
+    background-position: center center; }
+  .leftcustomer ul {
+    margin-top: 25px; }
+  .footwrap .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%; }
+  .over {
+    width: 100%;
+    height: 300px; }
+  .instabox .flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .footbreak {
+    height: 250px;
+    margin-top: 5%; }
+  .footbreak .flex {
+    height: 80%; }
+  .instagram .flex,
+  .instagram {
+    height: 100%; }
+  .payment {
+    width: 100%; }
+  .endwrap {
+    width: 90%; } }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 800px) {
+  .galleryitem {
+    width: calc((100% / 3) - 15px); }
+  .galleryitem:last-child {
+    display: none; }
+  .posts .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .blogtext {
+    height: 150px; }
+  .postbox:hover .blogtext {
+    height: 150px; }
+  .postbox {
+    width: 80%;
+    height: auto;
+    margin-bottom: 5%; }
+  .postbox:last-child {
+    margin-bottom: 0; }
+  .blogtext p {
+    visibility: visible; }
+  .blogoverlay {
+    height: 68%; }
+  .icons .flex {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .newsletter p {
+    width: auto; }
+  .customer {
+    height: auto; }
+  .customer .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .leftcustomer, .rightcustomer {
+    width: 100%;
+    height: 400px; }
+  .plantstore {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 70%; }
+  .rightcustomer .flex {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .mainwrap, .footwrap {
+    width: 90%; }
+  .shopnow {
+    margin-top: 30px; }
+  h1 {
+    line-height: 1.2; }
+  .top1 {
+    width: 50%; }
+  .top3 ul {
+    width: 50%; } }
+
+@media (max-width: 700px) {
+  .newsletter span {
+    right: 90px; }
+  .blogtext {
+    height: 190px; }
+  .postbox:hover .blogtext {
+    height: 190px; }
+  .plantstore {
+    width: 80%; }
+  .underbreak {
+    margin-bottom: 5%;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .footbreak {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .instagram {
+    padding: 0px; }
+  .foottitle {
+    margin-bottom: 15px; }
+  .account, .services {
+    width: auto; }
+  .icons .flex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; } }
+
+@media (max-width: 550px) {
+  .plantstore {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .rightcustomer {
+    padding-top: 5%; }
+  .top1 {
+    width: 70%;
+    margin-right: 15px; }
+  section:hover .undertitle :nth-child(even) {
+    margin: 0px 150px; }
+  .galleryitem {
+    width: calc((100% / 2) - 15px); }
+  .galleryitem:last-child {
+    display: block; }
+  .galleryoverlay .flex {
+    height: 60%; }
+  .leftcustomer ul {
+    margin-top: 0px; }
+  .interior h2 {
+    line-height: 1.2; }
+  .instagram {
+    width: 50%; }
+  .top3 ul {
+    width: 70%; } }
+
+/* Landscape phones and down */

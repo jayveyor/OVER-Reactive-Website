@@ -59,3 +59,259 @@ h1 {
 ul {
     list-style: none;
 }
+
+
+@media (max-width: 1060px) {
+
+   .galleryoverlay .flex {
+       height:70%;
+   }
+
+   .postbox:hover .blogtext {
+       height: 250px;
+   }
+          .newsletter span {
+              right: 110px;
+          }
+}
+@media (max-width: 1000px) {
+    .rightcustomer {
+        padding-bottom:5%;
+    }
+    .plantstore {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 920px) {
+.galleryoverlay .flex {
+    height: 80%;
+}
+
+.mainwrap, .footwrap{
+    width: 80%;
+}
+.payment {
+    width:115%;
+}
+    .officeplant {
+        background-position: center center;
+    }
+
+    .leftcustomer ul {
+        margin-top: 25px;
+    }
+
+    .footwrap .flex {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .over {
+        width: 100%;
+        height: 300px;
+    }
+
+    .instabox .flex {
+        flex-direction: row;
+    }
+
+    .footbreak {
+        height: 250px;
+        margin-top: 5%;
+    }
+
+    .footbreak .flex {
+        height: 80%;
+    }
+
+    .instagram .flex,
+    .instagram {
+        height: 100%;
+    }
+
+    .payment {
+        width: 100%;
+    }
+
+    .endwrap {
+        width: 90%;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 800px) {
+.galleryitem {
+    width: calc((100% / 3) - 15px);
+
+}
+
+.galleryitem:last-child{
+    display:none;
+}
+
+.posts .flex {
+    flex-direction: column;
+    align-items: center;
+}
+
+.blogtext {
+    height:150px;
+}
+
+.postbox:hover .blogtext {
+    height: 150px;
+}
+.postbox {
+    width: 80%;
+    height: auto;
+    margin-bottom:5%;
+}
+
+.postbox:last-child {
+    margin-bottom: 0;
+}
+
+.blogtext p {
+    visibility: visible;
+}
+
+.blogoverlay {
+    height:68%;
+}
+
+.icons .flex {
+    justify-content: space-around;
+}
+.newsletter p {
+    width: auto;
+}
+.customer {
+    height:auto;
+}
+.customer .flex {
+    flex-direction: column;
+}
+.leftcustomer, .rightcustomer {
+    width:100%;
+    height:400px;
+}
+
+    .plantstore {
+        flex-direction: row;
+        align-items: center;
+        width:70%;
+    }
+.rightcustomer .flex {
+    justify-content: center;
+}
+    .mainwrap , .footwrap {
+        width: 90%;
+    }
+    .shopnow {
+            margin-top: 30px;
+    }
+    h1 {
+        line-height: 1.2;
+    }
+    .top1 {
+        width:50%;
+    }
+    .top3 ul {
+        width:50%;
+    }
+}
+@media (max-width: 700px) {
+
+.newsletter span {
+    right: 90px;
+}
+
+.blogtext {
+    height: 190px;
+}
+
+.postbox:hover .blogtext {
+    height: 190px;
+}
+
+    .plantstore {
+        width: 80%;
+    }
+    .underbreak {
+        margin-bottom: 5%;
+        justify-content: space-around;
+    }
+
+    .footbreak {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .instagram {
+        padding:0px;
+    }
+    .foottitle {
+        margin-bottom:15px;
+    }
+    .account,.services {
+        width:auto;
+    }
+
+    .icons .flex {
+        flex-wrap:wrap;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .plantstore {
+        flex-direction: column;
+    }
+    .rightcustomer {
+        padding-top:5%;
+    }
+    .top1 {
+            width: 70%;
+            margin-right: 15px;
+    }
+
+    section:hover .undertitle :nth-child(even) {
+        margin: 0px 150px;
+    }
+
+    .galleryitem {
+        width:calc((100% / 2) - 15px );
+    }
+    .galleryitem:last-child {
+        display: block;
+    }
+
+    .galleryoverlay .flex {
+        height: 60%;
+    }
+
+.leftcustomer ul{
+    margin-top:0px;
+}
+.interior h2 {
+    line-height: 1.2;
+}
+.instagram {
+    width:50%;
+}
+   .top3 ul {
+       width: 70%;
+   }
+}
+
+/* Landscape phones and down */
+
+@media (max-width: 480px) {
+
+
+}

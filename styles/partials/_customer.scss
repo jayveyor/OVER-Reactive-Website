@@ -12,16 +12,16 @@
 .leftcustomer {
     background-color: #dddfed;
     width: 50%;
-    padding: 5%;
-    padding-top: 7%;
+    padding: 7% 5% 10%;
     height: 100%;
     text-align: center;
 }
 
 .leftcustomer .flex {
     flex-direction: column;
-    height: 70%;
+    height: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 
 .leftcustomer ul {
@@ -45,13 +45,6 @@
     text-transform: capitalize;
     font-weight: 500;
     font-size: 1.7rem;
-}
-
-.leftcustomer h1 {
-    font-size: 10rem;
-    color: #f07f84;
-    height: 30%;
-    line-height: 1;
 }
 
 .leftcustomer p {
@@ -124,4 +117,10 @@
 .play i {
     transform: scaleX(1.7);
     margin-left: 5px;
+}
+
+.plantstore {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
 }

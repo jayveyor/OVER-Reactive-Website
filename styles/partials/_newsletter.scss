@@ -1,7 +1,7 @@
 .newsletter {
     margin: 5% 0px;
     text-align: center;
-    height: 70vh;
+    height: 500px;
 }
 
 .newsletter .sectiontitle {
@@ -50,4 +50,10 @@
     position: absolute;
     right: 150px;
     bottom: 0;
+}
+.icons a {
+    margin-right:10px;
+}
+.icons a:last-child {
+    margin-right: 0px;
 }

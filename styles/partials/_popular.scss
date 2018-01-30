@@ -21,9 +21,9 @@
 
 .gallery {
     margin-top: 5%;
-    height: 700px;
     text-align: center;
 }
+
 
 .gallery .flex {
     flex-wrap: wrap;
@@ -36,10 +36,11 @@
 .galleryitem {
     width: calc((100% / 5) - 15px);
     height: calc((100% / 2) - 15px);
+        margin-bottom: 5%;
 }
 
 .galleryitem img {
-    max-width: 100%;
+    width: 100%;
     max-height: 100%;
 }
 

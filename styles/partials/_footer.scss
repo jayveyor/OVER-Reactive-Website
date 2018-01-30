@@ -30,15 +30,23 @@ footer .undertitle {
 }
 
 .footwrap .flex {
-    flex-direction: row;
-    justify-content: space-between;
     height: 350px;
 }
 
+.footbreak,
+.underbreak {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+}
+
 .over {
-    width: 35%;
+    width: 65%;
     padding: 0px 15px 0px 0px;
-    display: flex;
+}
+
+.over .flex {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
@@ -82,7 +90,7 @@ footer ul {
 }
 
 .services {
-    width: 20%;
+    width: 50%;
 }
 
 .services .flex {
@@ -97,11 +105,11 @@ footer ul {
 }
 
 .services:hover .undertitle {
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 .account {
-    width: 20%;
+    width: 50%;
 }
 
 .account .flex {
@@ -116,17 +124,19 @@ footer ul {
 }
 
 .account:hover .undertitle {
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 .instagram {
     padding: 0px 0px 0px 10px;
-    width: 25%;
-    display: flex;
+    width: 40%;
+    height: 80%;
+}
+.instagram .flex {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    height: 80%;
+    height:95%;
 }
 
 .postbox h3 {
@@ -135,6 +145,7 @@ footer ul {
 
 .instabox {
     height: calc((70px * 2) + 17px);
+    min-width: calc((70px *3) + 10px);
 }
 
 .instabox .flex {
@@ -143,6 +154,7 @@ footer ul {
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    flex-direction: row;
 }
 
 .instabox img {
