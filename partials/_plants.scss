@@ -6,7 +6,7 @@
 
 .airplant {
     width: calc(40% - 15px);
-    background-image: url("/images/cacti.png");
+    background-image: url("images/cacti.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -28,7 +28,7 @@
 
 .officeplant {
     width: calc(50% - 15px);
-    background-image: url("/images/hanging.png");
+    background-image: url("images/hanging.png");
     background-repeat: no-repeat;
     background-position: top;
     transition: .5s;
@@ -41,7 +41,7 @@
 
 .houseplant {
     width: 50%;
-    background-image: url("/images/airplant.png");
+    background-image: url("images/airplant.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -109,7 +109,7 @@
 
 .contplants {
     height: 50%;
-    background-image: url("/images/pot.png");
+    background-image: url("images/pot.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

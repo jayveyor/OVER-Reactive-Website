@@ -282,10 +282,10 @@ header {
     transform: translate(0); } }
 
 .hero {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3))), url("/images/hero.png");
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.3)), url("/images/hero.png");
-  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.3)), url("/images/hero.png");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.3)), url("/images/hero.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3))), url("images/hero.png");
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.3)), url("images/hero.png");
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.3)), url("images/hero.png");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3)), url("images/hero.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -422,7 +422,7 @@ a i {
   justify-content: space-between; }
 
 .interior {
-  background-image: url("/images/plant.png");
+  background-image: url("images/plant.png");
   background-repeat: no-repeat;
   text-align: center;
   background-position: center;
@@ -460,7 +460,7 @@ a i {
 
 .airplant {
   width: calc(40% - 15px);
-  background-image: url("/images/cacti.png");
+  background-image: url("images/cacti.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -481,7 +481,7 @@ a i {
 
 .officeplant {
   width: calc(50% - 15px);
-  background-image: url("/images/hanging.png");
+  background-image: url("images/hanging.png");
   background-repeat: no-repeat;
   background-position: top;
   -webkit-transition: .5s;
@@ -494,7 +494,7 @@ a i {
 
 .houseplant {
   width: 50%;
-  background-image: url("/images/airplant.png");
+  background-image: url("images/airplant.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -571,7 +571,7 @@ a i {
 
 .contplants {
   height: 50%;
-  background-image: url("/images/pot.png");
+  background-image: url("images/pot.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -785,7 +785,7 @@ a i {
   height: 100%; }
 
 .leftcustomer {
-  background-image: url("/images/customerbg.png");
+  background-image: url("images/customerbg.png");
   width: 50%;
   padding: 100px 5% 120px;
   height: 100%;
@@ -861,10 +861,10 @@ a i {
   justify-content: space-between; }
 
 .rightcustomer {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/video.png");
-  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/video.png");
-  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/video.png");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/video.png");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("images/video.png");
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/video.png");
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/video.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/video.png");
   width: 50%;
   height: 100%;
   padding: 10% 5%;
