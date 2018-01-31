@@ -15,7 +15,8 @@
     line-height: 1.5;
 }
 
-.popular li:hover {
+.popular li:hover,
+.popular li:focus {
     border-bottom: 1px black solid;
 }
 
@@ -36,7 +37,7 @@
 .galleryitem {
     width: calc((100% / 5) - 15px);
     height: calc((100% / 2) - 15px);
-        margin-bottom: 5%;
+    margin-bottom:15px;
 }
 
 .galleryitem img {
@@ -66,11 +67,13 @@
     transition: .2s;
 }
 
-.galleryoverlay:hover {
+.galleryoverlay:hover,
+.galleryoverlay:focus {
     background-color: rgba(0, 0, 0, 0.568);
 }
 
-.galleryoverlay:hover .cart {
+.galleryoverlay:hover .cart,
+.galleryoverlay:focus .cart {
     visibility: visible;
 }
 
@@ -80,21 +83,19 @@
     height: 60%;
 }
 
-.cart:hover {
+.cart:hover,
+.cart:focus {
     box-shadow: 5px 5px black;
 }
 
 .cart h3 {
     font-weight: 100;
     font-size: .8rem;
-}
-
-.cart a {
-    text-decoration: none;
     color: $primaryColor;
 }
 
-.cart a:hover {
+.cart:hover h3, 
+.cart:focus h3 {
     color: black;
 }
 
@@ -109,11 +110,11 @@
 }
 
 .hot {
-    background-color: #ff9a9e;
+    background-color: $pinkColor;
 }
 
 .new {
-    background-color: #79dad6;
+    background-color: $blueColor;
 }
 
 .percent {
@@ -140,12 +141,14 @@
 .galtext h4 {
     font-size: .75rem;
     font-weight: normal;
+    width: 105%;
+    margin: 0;
 }
 
 .price {
     display: flex;
     justify-content: space-around;
-    margin-top: 15px;
+    margin-bottom: 15px;
     width: 70%;
     align-items: center;
 }

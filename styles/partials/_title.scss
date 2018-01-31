@@ -11,7 +11,7 @@
 }
 
 .titleline {
-    background-color: #a8edea;
+    background-color: $blueColor;
     width: 30px;
     height: 2px;
     float: left;
@@ -22,9 +22,10 @@ section .undertitle :nth-child(even) {
     background-color: #f5efef;
 }
 
-section:hover .undertitle :nth-child(even) {
+section:hover .undertitle :nth-child(even),
+section:focus .undertitle :nth-child(even) {
     margin: 0px 200px;
-    background-color: #a8edea;
+    background-color: $blueColor;
 }
 
 .sectiontitle {

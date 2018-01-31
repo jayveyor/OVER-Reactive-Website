@@ -1,5 +1,5 @@
 header {
-    height: 700px;
+    height: 675px;
     overflow: hidden;
 }
 
@@ -19,6 +19,7 @@ header {
 .topbar .flex ul {
     display: flex;
     margin: 0;
+    flex-wrap: wrap;
 }
 
 .topelement {
@@ -45,7 +46,8 @@ header {
     text-decoration: none;
 }
 
-.topelement a:hover {
+.topelement a:hover,
+.topelement a:focus {
     color: $primaryColor;
 }
 
@@ -53,7 +55,8 @@ header {
     transition: .2s;
 }
 
-.topelement li:hover {
+.topelement li:hover,
+.topelement li:focus {
     transform: scale(1.05);
 }
 
@@ -65,11 +68,13 @@ header {
     transition: .2s;
 }
 
-.top2 img:hover {
+.top2 img:hover,
+.top2 img:focus {
     transform: scale(1.05);
 }
 
-.top2:hover {
+.top2:hover,
+.top2:focus {
     -webkit-animation: vibrate-1 0.3s linear infinite both;
     animation: vibrate-1 0.3s linear infinite both;
     animation-delay: .1s;
@@ -77,6 +82,7 @@ header {
 
 .top3 {
     justify-content: flex-end;
+    position: relative;
 }
 
 .top3 ul {
@@ -171,7 +177,9 @@ header {
 }
 
 .hero .flex li:hover,
-.hero .flex i:hover {
+.hero .flex i:hover, 
+.hero .flex li:focus,
+.hero .flex i:focus,{
     color: $primaryColor;
 }
 
@@ -182,7 +190,7 @@ header {
 }
 
 .shopnow {
-    background-color: #f07f84;
+     background-color: $pinkColor;
     width: 150px;
     line-height: 50px;
     text-transform: uppercase;
@@ -192,6 +200,27 @@ header {
     transition: .2s;
 }
 
-.shopnow:hover {
-    background-color: #d87378;
+.shopnow:hover,
+.shopnow:focus {
+    background-color: darken($pinkColor, 5%);
+}
+.fa-shopping-bag{
+position: relative;
+}
+.fa-shopping-bag::after {
+    content: "2";
+    position: absolute;
+    background-color:$blueColor;
+    border-radius:50%;
+    height:17px;
+    width:17px;
+    font-size:.75rem;
+    text-align: center;
+    right:-10px;
+    bottom:10px;
+    line-height: 1.5;
+}
+
+a i {
+    color:black;
 }

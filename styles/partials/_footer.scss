@@ -10,7 +10,8 @@ footer a {
     transition: .2s;
 }
 
-footer a:hover {
+footer a:hover,
+footer a:focus {
     color: black;
 }
 
@@ -77,7 +78,7 @@ footer ul {
     width: 60%;
 }
 
-.socialmedia i {
+.socialmedia a i {
     color: black;
     width: 10px;
     height: 10px;
@@ -85,7 +86,8 @@ footer ul {
     font-size: 1.5rem;
 }
 
-.socialmedia i:hover {
+.socialmedia a i:hover,
+.socialmedia a i:focus {
     color: $primaryColor;
 }
 
@@ -104,7 +106,8 @@ footer ul {
     transition: 1s;
 }
 
-.services:hover .undertitle {
+.services:hover .undertitle, 
+.services:focus .undertitle {
     margin-left: 80px;
 }
 
@@ -123,7 +126,8 @@ footer ul {
     transition: 1s;
 }
 
-.account:hover .undertitle {
+.account:hover .undertitle,
+.account:focus .undertitle {
     margin-left: 80px;
 }
 
@@ -168,7 +172,8 @@ footer ul {
     margin: 0;
 }
 
-.instabox img:hover {
+.instabox img:hover,
+.instabox img:focus {
     -webkit-animation: instawobble 0.8s ease-in-out;
     animation: instawobble 0.8s ease-in-out;
 }
@@ -206,7 +211,7 @@ footer ul {
 .payment {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-weight: normal;
 }
 
@@ -218,7 +223,8 @@ footer ul {
     transition: all .5s;
 }
 
-.payment img:hover {
+.payment img:hover,
+.payment img:focus {
     transform: scale(1.2);
 }
 
@@ -226,7 +232,8 @@ footer ul {
     transition: 1s;
 }
 
-.instagram:hover .undertitle {
+.instagram:hover .undertitle,
+.instagram:focus .undertitle {
     margin-left: 170px;
 }
 
@@ -245,6 +252,10 @@ footer ul {
 .end a {
     color: black;
     text-decoration: none;
+}
+.end a:hover,
+.end a:focus {
+    color: $primaryColor;
 }
 
 .endwrap {

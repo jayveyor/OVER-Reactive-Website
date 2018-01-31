@@ -18,7 +18,8 @@
     transition: .2s;
 }
 
-.icons img:hover {
+.icons img:hover,
+.icons img:focus {
     opacity: .5;
 }
 
